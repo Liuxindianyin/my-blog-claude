@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>医码双修 - 医学与编程的交汇</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div id="scroll-progress"></div>
+
+    <header class="header">
+        <div class="logo">
+            <a href="#home">医码双修</a>
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav-links">
+                <li><a href="#home"><i class="fas fa-home"></i> 首页</a></li>
+                <li><a href="#posts"><i class="fas fa-blog"></i> 文章</a></li>
+                <li><a href="#algorithm"><i class="fas fa-code"></i> 算法可视化</a></li>
+                <li><a href="#timeline"><i class="fas fa-clock"></i> 成长经历</a></li>
+                <li><a href="#projects"><i class="fas fa-project-diagram"></i> 项目</a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i> 联系我</a></li>
+                <li><a href="#about"><i class="fas fa-user"></i> 关于我</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero parallax">
+        <div id="particles-js"></div>
+        <div class="container">
+            <div class="typewriter">
+                <h1 class="neon">医学与编程的交汇</h1>
+            </div>
+            <p>探索生命科学的奥秘，用代码改变医疗的未来。</p>
+            <a href="#timeline" class="cta-button">查看我的成长经历</a>
+        </div>
+    </section>
+
+    <section id="posts" class="posts reveal">
+        <div class="container">
+            <h2>最新文章</h2>
+            <div class="post-grid">
+                <article class="post">
+                    <img src="img/blog-setup.png" alt="博客搭建" class="post-image lazy">
+                    <h3>如何搭建一个简单的博客</h3>
+                    <p>这篇文章详细介绍了如何使用HTML、CSS和JavaScript搭建一个个人博客...</p>
+                    <p><strong>发布日期:</strong> 2024年8月15日</p>
+                    <a href="#" class="read-more">阅读更多</a>
+                </article>
+                <article class="post">
+                    <img src="img/javascript-basics.png" alt="JavaScript基础" class="post-image lazy">
+                    <h3>JavaScript基础入门</h3>
+                    <p>了解JavaScript的基本概念和常用方法，适合初学者学习...</p>
+                    <p><strong>发布日期:</strong> 2024年8月10日</p>
+                    <a href="#" class="read-more">阅读更多</a>
+                </article>
+                <article class="post">
+                    <img src="img/medical-imaging.png" alt="医学影像处理" class="post-image lazy">
+                    <h3>医学影像处理入门</h3>
+                    <p>探讨如何使用Python处理医学影像数据，包括基本的图像处理技术...</p>
+                    <p><strong>发布日期:</strong> 2024年8月5日</p>
+                    <a href="#" class="read-more">阅读更多</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="algorithm" class="algorithm reveal">
+        <div class="container">
+            <h2>算法可视化</h2>
+            <p>选择排序算法并输入一个数列来看它们如何工作。</p>
+            <div class="algorithm-controls">
+                <input type="text" id="arrayInput" placeholder="输入数列，如 10, 3, 7, 4, 8" />
+                <button id="randomizeBtn">生成随机数组</button>
+                <select id="algorithmSelector">
+                    <option value="bubbleSort">冒泡排序</option>
+                    <option value="quickSort">快速排序</option>
+                    <option value="mergeSort">归并排序</option>
+                </select>
+                <button onclick="startVisualization()">开始可视化</button>
+            </div>
+            <div id="visualization-container"></div>
+        </div>
+    </section>
+
+    <section id="timeline" class="timeline reveal">
+        <div class="container">
+            <h2>我的成长经历</h2>
+            <div class="timeline-wrapper">
+                <div class="timeline-line"></div>
+                <div class="timeline-item" data-year="2023.8">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h4>开始医学专业</h4>
+                        <p>在武汉大学开始攻读医学专业，并对计算机科学产生浓厚兴趣。</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-year="2023.11">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h4>数学竞赛三等奖</h4>
+                        <p>在学习高数两个月后，抱着试一试的态度参加了大学生数学竞赛，获得了三等奖。</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-year="2024.4">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h4>华中杯数学建模大赛</h4>
+                        <p>参加华中杯数学建模大赛，准备时间不长，最终拿到一个入门奖。</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-year="2024.7">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h4>亚太杯中文赛区数模比赛</h4>
+                        <p>参加了亚太杯中文赛区数模比赛。</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-year="2024.8">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h4>学习网站开发</h4>
+                        <p>开始学习搭建网站，先后学习了HTML，CSS，JavaScript以及Vue。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects reveal">
+        <div class="container">
+            <h2>我的项目</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <div class="project-card-front">
+                        <img src="img/medical-image-analysis.png" alt="医学图像分析项目" class="project-image">
+                        <h3>医学图像分析工具</h3>
+                        <p>使用Python和OpenCV开发的医学图像处理工具，可以进行基本的图像增强和分割。</p>
+                    </div>
+                    <div class="project-card-back">
+                        <p>这个项目使用了深度学习算法来自动识别和分割医学图像中的异常组织。通过这个工具，医生可以更快速、准确地进行诊断。</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-card-front">
+                        <img src="img/health-data-viz.png" alt="健康数据可视化" class="project-image">
+                        <h3>健康数据可视化平台</h3>
+                        <p>基于Vue.js和D3.js开发的健康数据可视化平台，用于展示和分析个人健康指标。</p>
+                    </div>
+                    <div class="project-card-back">
+                        <p>这个平台能够实时追踪和可视化用户的健康数据，包括心率、血压、睡眠质量等。它还提供了数据分析和健康建议功能。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact reveal">
+        <div class="container">
+            <h2>联系我</h2>
+            <p>如果您对医学信息学或编程有任何问题，欢迎与我联系：</p>
+            <ul>
+                <li><i class="fas fa-envelope"></i> Email: example@email.com</li>
+                <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com">我的LinkedIn</a></li>
+                <li><i class="fab fa-github"></i> <a href="https://github.com">我的GitHub</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="about" class="about reveal">
+        <div class="container">
+            <h2>关于我</h2>
+            <div class="about-content">
+                <img src="img/profile-photo.png" alt="个人照片" class="profile-image">
+                <div class="about-text">
+                    <p>我是武汉大学的一名医学生，同时也是一名对编程与医学交叉领域充满热情的学习者。我热衷于探索如何利用编程和数据分析来改进医学研究和临床实践。</p>
+                    <p>在医学学习之余，我自学了编程，并积极参与各种数学建模和编程竞赛。我的目标是将医学知识与计算机科学结合，为医疗行业带来创新和改变。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 医码双修. 保留所有权利。</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <button id="myBtn" title="回到顶部">TOP</button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
