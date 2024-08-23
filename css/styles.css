@@ -775,13 +775,3 @@ footer {
 .dark-mode button:hover {
     background-color: #02c2a4;
 }
-
-/* 图片懒加载样式 */
-.lazy {
-    opacity: 0;
-    transition: opacity 0.3s;
-}
-
-.lazy.loaded {
-    opacity: 1;
-}
